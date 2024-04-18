@@ -90,6 +90,8 @@ module Basic
       Dollar
       Percent
       Colon
+      Semicolon
+      Comma
 
       Equal
       NotEqual
@@ -255,6 +257,8 @@ module Basic
         when '$'; add_token(TokenType::Dollar)
         when '%'; add_token(TokenType::Percent)
         when ':'; add_token(TokenType::Colon)
+        when ';'; add_token(TokenType::Semicolon)
+        when ','; add_token(TokenType::Comma)
         when '='; add_token(TokenType::Equal)
         when '<'
           add_token(
@@ -263,6 +267,7 @@ module Basic
         when '>'
           add_token(match('=') ? TokenType::GreaterEqual : TokenType::GreaterThan)
         when '"'; string
+        when ' '
         else
           if c.ascii_number?
             number

@@ -26,5 +26,5 @@ end
 
 Basic.run(Basic::Type::C64,
   %|
-1 print"Testing"
+1 print "Testing"
 |)
