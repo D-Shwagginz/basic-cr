@@ -1,0 +1,13 @@
+name: basic-cr
+version: 0.1.0
+
+authors:
+  - D. Shwagginz <93965353+D-Shwagginz@users.noreply.github.com>
+
+targets:
+  basic-cr:
+    main: src/basic-cr.cr
+
+crystal: 1.9.2
+
+license: MIT
